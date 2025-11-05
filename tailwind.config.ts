@@ -11,7 +11,6 @@ export default {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
-        headline: ['var(--font-lexend)'],
         code: ['monospace'],
       },
       colors: {

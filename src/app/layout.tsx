@@ -2,22 +2,16 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
-import { Inter, Lexend } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-const lexend = Lexend({
-  subsets: ['latin'],
-  variable: '--font-lexend',
-});
-
-
 export const metadata: Metadata = {
   title: 'ubayresearch.org',
-  description: 'Advancing the frontiers of knowledge through cutting-edge research and collaboration.',
+  description: 'An AI-powered research paper summarizer.',
 };
 
 export default function RootLayout({
@@ -27,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn('font-sans antialiased', inter.variable, lexend.variable)}>
+      <body className={cn('font-sans antialiased', inter.variable)}>
         {children}
         <Toaster />
       </body>
