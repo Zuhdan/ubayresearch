@@ -30,6 +30,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.externals.push(
+        '@genkit-ai/google-genai',
+        '@genkit-ai/next',
+        'genkit'
+      );
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
