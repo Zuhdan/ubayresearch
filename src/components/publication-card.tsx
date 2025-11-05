@@ -15,7 +15,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { placeholderImages } from '@/lib/placeholder-images';
 import { getSummary } from '@/app/actions';
-import { Loader2 } from 'lucide-react';
+import { Loader2, ArrowRight } from 'lucide-react';
 import type { Publication } from './publications-section';
 import { useToast } from '@/hooks/use-toast';
 
@@ -53,31 +53,36 @@ const PublicationCard: React.FC<PublicationCardProps> = ({ publication }) => {
 
   return (
     <>
-      <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl hover:-translate-y-1">
-        <CardHeader className="p-0">
-          {paperImage && (
+      <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl group">
+        {paperImage && (
+          <div className="overflow-hidden">
             <div className="aspect-[16/10] relative">
               <Image
                 src={paperImage.imageUrl}
                 alt={publication.title}
                 fill
-                className="object-cover rounded-t-lg"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
                 data-ai-hint={paperImage.imageHint}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-          )}
-          <div className="p-6">
-            <CardTitle>{publication.title}</CardTitle>
           </div>
+        )}
+        <CardHeader className="p-6">
+          <p className="text-sm font-medium text-primary">{publication.journal}</p>
+          <CardTitle className="font-headline text-xl leading-snug">{publication.title}</CardTitle>
         </CardHeader>
         <CardContent className="flex-grow p-6 pt-0">
           <p className="text-sm text-muted-foreground">{publication.authors}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{publication.journal}</p>
         </CardContent>
-        <CardFooter className="p-6 pt-0">
-          <Button onClick={handleSummarize} className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isPending}>
+        <CardFooter className="p-6 pt-0 flex-col items-start gap-4">
+           <Button onClick={handleSummarize} variant="outline" className="w-full" disabled={isPending}>
             {isPending ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" />Summarizing...</> : 'Get AI Summary'}
+          </Button>
+           <Button asChild variant="link" className="p-0 h-auto">
+            <a href="#">
+              Read Paper <ArrowRight className="ml-1 h-4 w-4" />
+            </a>
           </Button>
         </CardFooter>
       </Card>
