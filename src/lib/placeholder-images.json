@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A modern laboratory or research environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1707944746058-4da338d0f827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYWJvcmF0b3J5JTIwcmVzZWFyY2h8ZW58MHx8fHwxNzYyMzYzNDExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laboratory research"
+    },
+    {
+      "id": "member-1",
+      "description": "Portrait of Dr. Evelyn Reed.",
+      "imageUrl": "https://images.unsplash.com/photo-1759342376042-6fa5f80d49b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2llbnRpc3QlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIzNjM0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scientist portrait"
+    },
+    {
+      "id": "member-2",
+      "description": "Portrait of Dr. Ben Carter.",
+      "imageUrl": "https://images.unsplash.com/photo-1746911053186-c727fb1410bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZXNlYXJjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYyMzU5ODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "researcher portrait"
+    },
+    {
+      "id": "member-3",
+      "description": "Portrait of Dr. Aisha Khan.",
+      "imageUrl": "https://images.unsplash.com/photo-1657414445551-973b7040ab38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzb3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyODc0OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professor portrait"
+    },
+    {
+      "id": "paper-1",
+      "description": "Abstract image representing data and networks.",
+      "imageUrl": "https://images.unsplash.com/photo-1720933017801-f9c93807cfc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjIyNDMyODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data network"
+    },
+    {
+      "id": "paper-2",
+      "description": "Microscopic view of cells or molecules.",
+      "imageUrl": "https://images.unsplash.com/photo-1758656803198-eeea35110219?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtaWNyb3Njb3BlJTIwY2VsbHN8ZW58MHx8fHwxNzYyMzEwNzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "microscope cells"
+    },
+    {
+      "id": "paper-3",
+      "description": "Image related to renewable energy or environmental science.",
+      "imageUrl": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZW5ld2FibGUlMjBlbmVyZ3l8ZW58MHx8fHwxNzYyMjgyNDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "renewable energy"
+    }
+  ]
 }
